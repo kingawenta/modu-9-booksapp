@@ -68,7 +68,7 @@
     initActions() {
       const thisBooksList = this;
 
-      thisBooksList.booksContainer.addEventListener('click', function (event) {
+      thisBooksList.booksContainer.addEventListener('dblclick', function (event) {
         event.preventDefault();
         const image = event.target.offsetParent;
         const idBook = image.getAttribute('data-id');
